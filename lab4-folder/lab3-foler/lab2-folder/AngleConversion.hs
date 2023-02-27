@@ -17,7 +17,7 @@ type Radians = Double
 
 -- convert degrees to radians
 degreesToRadians :: Degrees -> Radians
-degreesToRadians = undefined
+degreesToRadians degrees = degrees * (pi / 180)
 
 -- convert radians to degrees
 radiansToDegrees :: Radians -> Degrees
