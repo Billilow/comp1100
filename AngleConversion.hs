@@ -21,7 +21,7 @@ degreesToRadians degrees = degrees * (pi / 180)
 
 -- convert radians to degrees
 radiansToDegrees :: Radians -> Degrees
-radiansToDegrees = undefined
+radiansToDegrees radians = radians * (180 / pi)
 
 -- References
 -- [1] https://www.rapidtables.com/convert/number/how-radians-to-degrees.html
