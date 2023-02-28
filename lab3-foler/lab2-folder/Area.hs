@@ -18,3 +18,9 @@ areaRec2 :: Double -> Double -> Double
 areaRec2 w h = w * h
 
 
+-- Lab02
+
+areaTriangle :: Double -> Double -> Double -> Double
+areaTriangle a b c = sqrt(s * (s - a) * (s - b) * (s - c))
+    where 
+        s = (a + b + c)/2
