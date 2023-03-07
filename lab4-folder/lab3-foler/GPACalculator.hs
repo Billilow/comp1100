@@ -51,6 +51,12 @@ maybeGradeToGPA grade = case grade of
   Nothing -> 0
 
 -- | Exercise 7
--- Your comment here
+-- | converting mark to GPA.
+--
+-- >>> markToGPA 80
+-- 7.0
+--
+-- >>> markToGPA 30
+-- 0
 markToGPA :: Mark -> GPA
 markToGPA m = maybeGradeToGPA (markToGradeSafe m)
