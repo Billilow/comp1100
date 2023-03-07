@@ -24,6 +24,8 @@ markToGrade mark
   | mark >= 60 && mark <   70 = Credit
   | mark >= 50 && mark <   60 = Pass
   | mark >=  0 && mark <   50 = Fail
+  | mark < 0 || mark > 100 = error "markToGrade: Not a valid mark"
+  | otherwise = error "Not common result"
 
 -- | Exercise 4
 -- Your comment here
