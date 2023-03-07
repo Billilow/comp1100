@@ -42,7 +42,13 @@ markToGradeSafe m
 -- | Exercise 6
 -- Your comment here
 maybeGradeToGPA :: Maybe Grade -> GPA
-maybeGradeToGPA = undefined
+maybeGradeToGPA grade = case grade of
+  Just Fail -> 0
+  Just Pass -> 4
+  Just Credit -> 5
+  Just Distinction -> 6
+  Just HighDistinction -> 7
+  Nothing -> 0
 
 -- | Exercise 7
 -- Your comment here
