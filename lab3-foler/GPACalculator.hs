@@ -30,7 +30,7 @@ markToGrade mark
 -- | Exercise 4
 -- Your comment here
 markToGrade' :: (Course, Mark) -> Grade
-markToGrade' = undefined
+markToGrade' (_, m) = markToGrade m
 
 -- | Exercise 5
 -- Your comment here
