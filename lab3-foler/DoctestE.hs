@@ -1,4 +1,4 @@
-module DOctestE where
+module DoctestE where
 
 -- | Adding one.
 --
