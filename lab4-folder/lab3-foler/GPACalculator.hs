@@ -1,6 +1,6 @@
 {-|
 Module      : GPACalculator
-Author      : Debashish Chakraborty, Your name and UID here
+Author      : Debashish Chakraborty, Yoomin, u7527005
 Date        : 04/02/2019
 Description : This module contains functions to calculate GPA from grades and marks.
 -}

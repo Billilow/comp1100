@@ -1,6 +1,6 @@
 {-|
 Module      : Season
-Author      : Debashish Chakraborty, Your name and UID here
+Author      : Debashish Chakraborty, Yoomin, u7527005
 Date        : 29/01/2019
 Description : This module contains functions to check characteristics of 
               different seasons.
@@ -15,5 +15,13 @@ isCold season = case season of
     Spring -> False
     Summer -> False
     Autumn -> False
-    Winter -> False
     Winter -> True
+
+--Exercise 1 task 2
+
+isCold2 :: Season -> Bool
+isCold2 season = case season of
+    Winter -> True
+    _      -> False
+
+
