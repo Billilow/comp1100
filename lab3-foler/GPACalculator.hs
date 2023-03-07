@@ -53,4 +53,4 @@ maybeGradeToGPA grade = case grade of
 -- | Exercise 7
 -- Your comment here
 markToGPA :: Mark -> GPA
-markToGPA = undefined
+markToGPA m = maybeGradeToGPA (markToGradeSafe m)
