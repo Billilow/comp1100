@@ -33,9 +33,11 @@ markToGrade' :: (Course, Mark) -> Grade
 markToGrade' (_, m) = markToGrade m
 
 -- | Exercise 5
--- Your comment here
+-- 0<m<100 -> this kind of expression doesn't work on Haskell
 markToGradeSafe ::  Mark -> Maybe Grade
-markToGradeSafe = undefined
+markToGradeSafe m
+  | m > 0 && m < 100 = Just (markToGrade m)
+  | otherwise =   Nothing
 
 -- | Exercise 6
 -- Your comment here
