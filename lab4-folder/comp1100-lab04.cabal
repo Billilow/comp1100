@@ -6,7 +6,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Debashish Chakraborty, Joshua Corner, Tony Hosking
 maintainer:          debashish.chakraborty@anu.edu.au
-copyright:           2020 The Australian National University
+copyright:           2023 The Australian National University
 category:            Education
 build-type:          Simple
 cabal-version:       >= 2.0
