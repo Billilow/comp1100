@@ -20,6 +20,9 @@ myRectangle = rectangle 2 2
 myRectangle' :: Picture
 myRectangle' = solidRectangle 2 2
 
+colouredRectangle :: Picture
+colouredRectangle = coloured blue myRectangle'
+
 
 
 ------------------------------------------------------------------------------
