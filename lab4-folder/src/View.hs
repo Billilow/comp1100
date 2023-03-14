@@ -9,7 +9,7 @@ import CodeWorld
 -- (e.g. myRectangle, myRectangle', ...)
 myPicture :: Picture
 -- myPicture = coordinatePlane & translated 3 (-2) myRectangle'
-myPicture = colouredSquares
+myPicture = colouredSquares'
 
 
 -- For each exercise, create a new function below so that we can see you have
@@ -27,6 +27,9 @@ colouredRectangle = coloured blue myRectangle'
 
 colouredSquares :: Picture 
 colouredSquares = coloured blue myRectangle' & translated 0 3 (coloured orange myRectangle') & translated 3 3 (coloured green myRectangle') & translated 3 0 (coloured yellow myRectangle')
+
+colouredSquares' ::Picture
+colouredSquares' = rotated 45 (coloured blue myRectangle') & rotated 45 (translated 0 3 (coloured orange myRectangle')) & rotated 45 (translated 3 3 (coloured green myRectangle')) & rotated 45 (translated 3 0 (coloured yellow myRectangle'))
 
 
 ------------------------------------------------------------------------------
