@@ -3,10 +3,12 @@ module View where
 
 import CodeWorld
 
+
+
 -- This function can be assigned to different pictures
 -- (e.g. myRectangle, myRectangle', ...)
 myPicture :: Picture
-myPicture = blank
+myPicture = coordinatePlane
 
 -- For each exercise, create a new function below so that we can see you have
 -- completed each exercise
