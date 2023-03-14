@@ -8,7 +8,9 @@ import CodeWorld
 -- This function can be assigned to different pictures
 -- (e.g. myRectangle, myRectangle', ...)
 myPicture :: Picture
-myPicture = coordinatePlane & translated 3 (-2) myRectangle'
+-- myPicture = coordinatePlane & translated 3 (-2) myRectangle'
+myPicture = colouredSquares
+
 
 -- For each exercise, create a new function below so that we can see you have
 -- completed each exercise
@@ -23,6 +25,8 @@ myRectangle' = solidRectangle 2 2
 colouredRectangle :: Picture
 colouredRectangle = coloured blue myRectangle'
 
+colouredSquares :: Picture 
+colouredSquares = coloured blue myRectangle' & translated 0 3 (coloured orange myRectangle') & translated 3 3 (coloured green myRectangle') & translated 3 0 (coloured yellow myRectangle')
 
 
 ------------------------------------------------------------------------------
