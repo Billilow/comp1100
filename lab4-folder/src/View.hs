@@ -14,9 +14,9 @@ myPicture = coordinatePlane
 -- completed each exercise
 -- (e.g. myRectangle, myRectangle', colouredRectangle, colouredSquares, ...)
 
-myRectangle :: Picture
-myRectangle = undefined
 
+myRectangle :: Double -> Double -> Picture
+myRectangle = (rectangle 2 2)
 
 ------------------------------------------------------------------------------
 --  THIS SECTION BELOW REQUIRED FOR COMP1130 STUDENTS, OPTIONAL FOR 1100.   --
